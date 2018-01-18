@@ -1,6 +1,6 @@
 {
   "name": "IonicNativeFlashlight",
-  "app_id": "",
+  "app_id": "3690dd96",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

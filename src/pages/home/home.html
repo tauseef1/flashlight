@@ -1,14 +1,16 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Ionic Blank
+      Flashlight
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-item >
+    <span>The Flashlight is: {{isOn? 'ON' : 'OFF'}}</span>
+  </ion-item>
+  <button ion-button block color="secondary" (tap)="switchOn()" [disabled]="isOn">Switch On</button>
+  <button ion-button block color="secondary" (tap)="switchOff()" [disabled]="!isOn">Switch Off</button>
+  <button ion-button block color="secondary" (tap)="toggle()">Toggle</button>
 </ion-content>
